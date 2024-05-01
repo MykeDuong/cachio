@@ -1,3 +1,0 @@
-/home/mykeduong/Projects/cachio/build/CMakeFiles/cachio.dir
-/home/mykeduong/Projects/cachio/build/CMakeFiles/edit_cache.dir
-/home/mykeduong/Projects/cachio/build/CMakeFiles/rebuild_cache.dir

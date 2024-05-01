@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/qnetwork.dir/src/main.cpp.o -o qnetwork
