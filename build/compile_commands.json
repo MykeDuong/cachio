@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/mykeduong/Projects/cachio/build",
+  "command": "/usr/bin/c++    -o CMakeFiles/cachio.dir/src/main.cpp.o -c /home/mykeduong/Projects/cachio/src/main.cpp",
+  "file": "/home/mykeduong/Projects/cachio/src/main.cpp",
+  "output": "CMakeFiles/cachio.dir/src/main.cpp.o"
+}
+]
