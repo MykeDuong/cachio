@@ -77,11 +77,9 @@ int32_t accept_new_connection(ConnectionArray *fd_to_connection, int fd) {
 }
 
 void free_connection_array(ConnectionArray *array) {
-  /**
   for (int i = 0; i < array->count; i++) {
     free(array->connections[i]);
   }
-  */
 
   free(array->connections);
   initialize_connection_array(array);

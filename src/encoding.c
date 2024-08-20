@@ -1,5 +1,6 @@
 #include "encoding.h"
 #include "common.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -45,7 +46,7 @@ void out_string(Output *out, char *value, uint32_t length) {
 
 void out_integer(Output *out, int64_t value) {
   push_to_output(out, SERIAL_INTEGER);
-  append_to_output(out, (char *)value, 8);
+  append_to_output(out, (char *)&value, 8);
 }
 
 void out_error(Output *out, int32_t code, const char *const message) {

@@ -1,4 +1,5 @@
 #include <errno.h>
+#include <stdarg.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,3 +12,12 @@ void die(const char *msg) {
 }
 
 void msg(const char *message) { fprintf(stderr, "%s\n", message); }
+
+void debug_msg(const char *const msg, ...) {
+  printf("DEBUG: ");
+  va_list argptr;
+  va_start(argptr, msg);
+  vfprintf(stdout, msg, argptr);
+  va_end(argptr);
+  printf("\n");
+}

@@ -1,5 +1,6 @@
 #include <assert.h>
 #include <stdint.h>
+#include <stdio.h>
 #include <string.h>
 
 #include "common.h"
@@ -39,7 +40,7 @@ void execute_get(Command *command, Output *out) {
   HashNode *node = lookup_map(&g_data.db, &key.node, &entry_eq);
 
   if (!node) {
-    out_nil(out);
+    return out_nil(out);
   }
 
   ObjectString *value = &CONTAINER_OF(node, Entry, node)->value;

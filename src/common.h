@@ -7,6 +7,8 @@
 #define K_MAX_MSG 4096
 #define K_BUF_SIZE (K_MAX_MSG + 4)
 
+#define DEBUG_MODE
+
 typedef enum {
   SERIAL_NIL,
   SERIAL_ERROR,
@@ -14,6 +16,8 @@ typedef enum {
   SERIAL_INTEGER,
   SERIAL_ARRAY,
 } DataTypes;
+
+void debug_msg(const char *const msg, ...);
 
 void die(const char *msg);
 
